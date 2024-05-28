@@ -1,0 +1,67 @@
+
+*{
+    
+text-decoration: none;
+list-style: none;
+
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+
+
+.menulist{
+    height: 16rem;
+    width: 17rem;
+    background-color: rgba(9, 9, 9, 0.868);
+    font-size: 1.8rem;
+    position: absolute;
+    line-height: 4rem;
+    text-align: center;
+    left: 25.8rem;
+top: 13rem;
+}
+.menulist li a{
+    color: white;
+    position: relative;
+    /* top: -3rem; */
+    
+}
+
+
+ .recep{
+    top: 20.5rem;
+
+}
+
+.doctor_list{
+    margin-left: 3rem;
+    position: absolute;
+    top: 15.5rem;
+}
+
+input[type="checkbox"],
+.menulist {
+	display: none;
+}
+#check2{
+    display: none;
+}
+
+input[type="checkbox"]:checked~ul.menulist {
+	display: block;
+}
+label {
+	display: block;
+	position: relative;
+
+}
+
+.recep_list{
+    margin-left: 3rem;
+    position: absolute;
+    top: 21.3rem;
+}

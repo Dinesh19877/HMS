@@ -1,0 +1,69 @@
+
+/* ============working space============ */
+.box{
+    height: 75vh;
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit , minmax(20rem,1fr));
+    gap: 5rem;
+}
+.sub_box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+background-color: white;
+}
+.title{
+    font-size: 1.8rem;
+    color: rgba(0, 128, 0, 0.596) ;
+    text-align: center;
+    margin-top: 3rem;
+}
+.title_img{
+    margin: 3rem 6rem ;
+    width: 50%;
+}
+
+.loading .title ,
+ .loading .thumbnail , .loading .sideNav_menu{
+    position: relative;
+}
+
+.loading .title{
+    height: 4rem;
+    width: 80%;
+margin: auto;
+margin-top: 5rem;
+
+}
+
+.thumbnail{
+width: 80%;
+margin: auto;
+margin-top: 1rem;
+}
+
+.loading .title:after , .loading .thumbnail::after , .loading .sideNav_menu::after{
+    content: "";
+    position: absolute;
+    background-color: #a2abb1;
+    height: 95%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.297), rgba(255, 255, 255, 0.525), rgba(255, 255, 255, 0.365));
+background-position: 100% 0;
+animation: waves 1.8s linear infinite;
+
+}
+
+@keyframes waves {
+100%{
+    background-position: -100%;
+}    
+}
+

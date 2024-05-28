@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/REgister/registration.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+<style>
+
+  .head1{
+    background-color: white !important;
+    color: rgba(0, 128, 0, 0.641) ;
+  }
+
+  .icon_div{
+    height: 4rem;
+    width: 4rem;
+    border: solid;
+    border-radius: 50%;
+
+  }
+</style>
+
+</head>
+
+
+<body>
+  <div class="topInfo">
+    <div id="email">
+      <p class="email">medicare123@gmail.com</p>
+      <i class="fa-solid fa-envelope icon12"></i>
+    </div>
+
+    <div id="phone">
+      <p class="phone">+9779847022736</p>
+      <i class="fa-solid fa-phone icon12"></i>
+    </div>
+
+
+  </div>
+  <nav class="navbar">
+    <div class="logo">mediCare</div>
+    <ul class="nav-menu">
+      <li class="menu-list"><a href="#">Home</a></li>
+      <li class="menu-list"><a href="#about">About us</a></li>
+      <li class="menu-list"><a href="#contactUs">Contact</a></li>
+
+      <input type="checkbox" name="check1" id="check1">
+      <label for="check1" class="menu-list">Log in</label>
+      <ul class="subMenu">
+        <li><a href="./Html/LOGIN/Patient_login.php">Patient Login</a></li>
+        <li><a href="./Html/LOGIN/receptionist.php">Receptionist Login</a></li>
+        <li><a href="./Html/LOGIN/doctor.php">Doctor Login</a></li>
+        <li><a href="./Html/LOGIN/admin.php">Admin Login</a></li>
+      </ul>
+
+    </ul>
+  </nav>
+  <div class="homePage">
+
+
+
+    <div class="slider">
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>MediCare</h1>
+          <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="./img_file/hospital from.jpg" class="img1" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 2</h1>
+          <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="./img_file/hospital from.jpg" class="img1" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 3</h1>
+          <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="./img_file/hospital from.jpg" class="img1" style="width: 100%; height: 100%;">
+      </div>
+
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- About us  -->
+
+  <div class="aboutPage" id="about">
+
+    <div class="aboutHeading">
+      <h2>About mediCure</h2>
+    </div>
+    <div class="imageText">
+      <div class="aboutImage">
+        <img src="./img_file/hospital from.jpg" width="100%" alt="">
+      </div>
+      <div class="aboutText">mediCure Hospital is a state-of-the-art healthcare facility dedicated to providing exceptional medical care to its patients. Located in the heart of the city, mediCure Hospital boasts a team of highly qualified doctors, nurses, and healthcare professionals who are committed to delivering compassionate and personalized care. The hospital is equipped with the latest medical technology and advanced diagnostic tools, ensuring accurate and efficient treatment. With a wide range of specialties, including cardiology, oncology, neurology, and orthopedics, mediCure Hospital offers comprehensive services to meet the diverse needs of its patients. In addition to its clinical excellence, mediCure Hospital places a strong emphasis on patient safety and comfort, providing a welcoming and supportive environment for patients and their families. Whether it's a routine check-up or a complex surgical procedure, mediCure Hospital is dedicated to improving the health and well-being of the community it serves.</div>
+    </div>
+
+  </div>
+  <div class="contactUs" id="contactUs">
+
+    <div class="contact-container">
+      <div class="contactForm">
+
+        <form action="" method="post" name="FORM" onsubmit="return validform()"
+          id="form" class="form1" autocomplete="on">
+          <h1 class="head"> Get in Touch</h1>
+
+          <!-- =======================username===================== -->
+
+          <div class="form_con">
+            <input type="text" name="name" id="name" class="textfield1" placeholder=" " />
+            <label class="form-label">Enter your full name</label>
+            <i class="fa-solid fa-user icon"></i>
+            <p class="error" id="name_error"></p>
+          </div>
+          <!-- ===========================email============================== -->
+          <div class="form_con">
+            <input type="email" name="email" id="email" class="textfield1" placeholder=" " />
+            <label class="form-label">Enter your E-mail</label>
+            <i class="fa-solid fa-envelope icon"></i>
+            <p class="error" id="email_error"></p>
+
+          </div>
+
+          <!-- ===========================phone number============================== -->
+
+
+
+          <div class="form_con">
+            <input type="text" maxlength="10" name="pnumber" id="pnumber" class="textfield1" placeholder=" " />
+            <label class="form-label">Enter your Phone number</label>
+            <i class="fa-solid fa-phone icon"></i>
+            <p class="error" id="pnumber_error"></p>
+          </div>
+
+          <!-- ===========================MEssage============================== -->
+
+          <div class="form_con">
+            <textarea name="Message" id="Message" class="textfield1" cols="40" rows="5" placeholder=" "></textarea>
+            <label class="form-label">Message</label>
+            <p class="error" id="Message_error"></p>
+          </div>
+          <div class="form_con btn">
+            <input type="submit" name="sumb" id="submit" class="button-1 button-11" value="Submit" placeholder="" />
+          </div>
+        </form>
+      </div>
+      <div class="infoMap">
+        <div class="contactInfo">
+          <div  class="head head1">
+          <h3>Contact Info</h3>
+          </div>
+          <div class="information">
+            <div class="address">
+              <div class="icon_div">
+              <i class="fa-solid fa-location-dot fa-bounce icon1"></i>
+            </div>
+              <p class="location">Sunwal-5,Bankatti,Nawalparasi Nepal</p>
+
+
+            </div>
+
+
+            <div class="address">
+              <div class="icon_div">
+              <i class="fa-solid fa-envelope fa-beat icon1"></i>
+              </div>
+              <p class="location">medicure123@gmail.com</p>
+
+
+
+            </div>
+
+
+            <div class="address">
+              <div class="icon_div">
+              <i class="fa-solid fa-phone fa-shake icon1"></i>
+              </div>
+              <p class="location">+9779847022736</p>
+            </div>
+            <div class=" social_icon">
+             <a href=""> <i class="socialmedia fa-brands fa-square-instagram" title="Instagram"></i></a>
+             <a href="https://www.facebook.com/dikshyapaudel08" target="_blank"> <i class="socialmedia fa-brands fa-facebook"title="Facebook"></i></a>
+             <a href=""> <i class="socialmedia fa-brands fa-youtube" title="Youtube"></i></a>
+             <a href=""> <i class="socialmedia fa-brands fa-linkedin" title="Linkedin"></i></a>
+             <a href=""> <i class="socialmedia fa-brands fa-square-x-twitter" title="Twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.111648962671!2d85.34461526509415!3d27.718344088537226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197ac943b5a3%3A0x7b7cad108a8eaa0b!2sMedicare%20Hospital!5e0!3m2!1sen!2snp!4v1705934950299!5m2!1sen!2snp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./Js/script.js"></script>
+
+</html>

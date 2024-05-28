@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Document</title>
+<link rel="stylesheet" href="../../CSS/dashboard/Payment.css">
+</head>
+<body>
+    <!--Font Awesome CDN-->
+<div class="container">
+    <div class="title">
+        <h4>Select a <span style="color: rgba(0, 128, 0, 0.596);
+            ">Payment</span> method</h4>
+    </div>
+
+    <form action="#">
+        <input type="radio" name="payment" id="visa">
+        <input type="radio" name="payment" id="mastercard">
+        <input type="radio" name="payment" id="paypal">
+        <input type="radio" name="payment" id="AMEX">
+
+
+        <div class="category">
+            <label for="visa" class="visaMethod">
+                <div class="imgName">
+                    <div class="imgContainer visa">
+                     <a href=""><img src="../../img_file/esewa.webp" alt=""></a>   
+                    </div>
+                    <span class="name">Esewa</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="mastercard" class="mastercardMethod">
+                <div class="imgName">
+                    <div class="imgContainer mastercard">
+                       <a href="https://web.khalti.com/#/wallet/offer-fund"><img src="../../img_file/khalti.webp" alt=""></a> 
+                    </div>
+                    <span class="name">Khalti</span>
+
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="paypal" class="paypalMethod">
+                <div class="imgName">
+                    <div class="imgContainer paypal">
+                        <img src="../../img_file/ime.webp" alt="">
+                    </div>
+                    <span class="name">IMEpay</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="AMEX" class="amexMethod">
+                <div class="imgName">
+                    <div class="imgContainer AMEX">
+                        <img src="../../img_file/nimbl.webp" alt="">
+                    </div>
+                    <span class="name">NIMB Smart</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+        </div>
+    </form>
+</div>
+</body>
+</html>

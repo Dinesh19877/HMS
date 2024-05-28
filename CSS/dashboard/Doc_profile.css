@@ -1,0 +1,47 @@
+.doc_container{
+    width: 100%;
+    height: 100vh;
+}
+
+.doc_detail{
+width: 80%;
+height: 80vh;
+border:solid ;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+
+}
+.doc_title{
+    font-size: 35px;
+    margin: 25px;
+    margin-left: 290px;
+}
+.detail_image{
+display: flex;
+position: relative;
+justify-content: center;
+gap: 6%;
+
+}
+
+.doc_info{
+width: 60%;
+height: 40vh;
+margin-top: 7rem;
+background-color: rgba(0, 128, 0, 0.283);
+
+}
+.doc_info tr{
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+.doc_img{
+    width: 30%;
+    height: 40vh;
+    border: solid;
+    margin-top: 2rem;
+}

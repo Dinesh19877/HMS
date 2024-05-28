@@ -1,0 +1,504 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+
+}
+
+:root {
+	--color: white;
+
+}
+
+html {
+	font-size: 62.5%;
+	/*========== 1rem=10px========== */
+}
+
+.homePage {
+	width: 100%;
+	height: 85vh;
+}
+
+.topInfo {
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	gap: 10rem;
+}
+
+.icon12 {
+	font-size: 2rem;
+	position: relative;
+	top: -2.7rem;
+	left: -2.5rem;
+}
+
+
+.email,
+.phone {
+	font-size: 2rem;
+	line-height: 4rem;
+}
+
+.navbar {
+	width: 100%;
+	height: 6rem;
+	background-color: rgba(2, 164, 2, 0.975);
+
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+}
+
+.logo {
+	font-size: 3rem;
+	line-height: 6rem;
+	margin-left: 5rem;
+	color: rgb(184, 15, 15);
+}
+
+.nav-menu {
+	display: flex;
+	margin-right: 6rem;
+	float: right;
+}
+
+.nav-menu .menu-list {
+	width: 11rem;
+	line-height: 6rem;
+	font-size: 2rem;
+	cursor: pointer;
+color: white;
+
+}
+
+.nav-menu .menu-list a {
+	color: rgb(252, 251, 251);
+
+}
+
+.subMenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 19rem;
+	background-color: rgba(2, 164, 2, 0.975);
+
+	right: 0rem;
+
+}
+
+.subMenu li {
+	font-size: 2rem;
+	line-height: 4rem;
+	margin-left: 1.3rem;
+}
+
+.subMenu li a {
+	color: rgb(250, 249, 249);
+}
+
+input[type="checkbox"],
+.subMenu {
+	display: none;
+}
+
+input[type="checkbox"]:checked~ul.subMenu {
+	display: block;
+}
+
+label {
+	display: block;
+	position: relative;
+
+}
+
+.slider {
+	position: relative;
+	width: 100%;
+}
+
+.myslide {
+	height: 620px;
+	display: none;
+	overflow: hidden;
+	width: 93%;
+	margin: 10px auto;
+}
+
+.prev,
+.next {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 40px;
+	padding: 15px;
+	cursor: pointer;
+	color: black;
+	transition: 0.1s;
+	user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+	color: #00a7ff;
+}
+
+.next {
+	right: 0;
+}
+
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.8
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.8
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.txt {
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+	-webkit-animation-duration: 2s;
+	animation-name: posi;
+	animation-duration: 2s;
+	z-index: -1;
+}
+
+@-webkit-keyframes posi {
+	from {
+		left: 25%;
+	}
+
+	to {
+		left: 15%;
+	}
+}
+
+
+@keyframes posi {
+	from {
+		left: 25%;
+	}
+
+	to {
+		left: 15%;
+	}
+}
+
+.txt h1 {
+	color: #00a7ff;
+	/* blue */
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.txt p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.img1 {
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+	-webkit-animation-duration: 40s;
+	animation-name: zoomin;
+	animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin {
+	from {
+		transform: scale(1, 1);
+	}
+
+	to {
+		transform: scale(1.5, 1.5);
+	}
+}
+
+
+@keyframes zoomin {
+	from {
+		transform: scale(1, 1);
+	}
+
+	to {
+		transform: scale(1.5, 1.5);
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.myslide {
+		height: 500px;
+	}
+
+	.txt {
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+		from {
+			top: 35%;
+		}
+
+		to {
+			top: 50%;
+		}
+	}
+
+
+	@keyframes posi2 {
+		from {
+			top: 35%;
+		}
+
+		to {
+			top: 50%;
+		}
+	}
+
+	.txt h1 {
+		font-size: 40px;
+	}
+
+	.txt p {
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+	.txt h1 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+}
+
+
+
+.aboutPage {
+	height: 100vh;
+	width: 100%;
+}
+
+.aboutHeading {
+	font-size: 2.5rem;
+	text-align: center;
+	width: 30rem;
+	margin: 3rem auto;
+	border-bottom: 4px solid rgba(0, 128, 0, 0.596);
+
+	position: relative;
+	top: 100px;
+}
+
+
+.imageText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	flex-wrap: wrap;
+	margin-top: 10rem;
+	position: relative;
+	top: 7rem;
+
+}
+
+.aboutImage {
+	width: 50rem;
+	height: 40rem;
+	position: relative;
+	top: 4rem;
+
+
+}
+
+.aboutText {
+	font-size: 1.6rem;
+	line-height: 2rem;
+	letter-spacing: 0.2rem;
+	word-spacing: 0.2rem;
+	width: 80rem;
+}
+
+.contactUs {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.062);
+}
+
+.contact-container {
+	justify-content: center;
+	display: flex;
+	gap: 5rem;
+	position: relative;
+	top: 8rem;
+	
+
+}
+
+.contactForm {
+	width: 50rem;
+	height: 58.5rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+background-color: white;
+
+}
+
+.contactInfo {
+	width: 45rem;
+	height: 28rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	background-color: white;
+
+	margin-bottom: 2rem;
+}
+
+.map {
+	width: 45rem;
+	height: 28rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.infoMap {
+	gap: 2rem;
+	position: relative;
+
+}
+
+.textfield1 {
+	padding: 1rem;
+	width: 30rem;
+	outline: none;
+	background: none;
+	border: none;
+	border-radius: 0.6rem;
+	color: var(--white);
+	font-size: 2rem;
+	padding-left: 6rem;
+	border: 0.1rem solid rgb(14, 13, 13);
+	z-index: -1;
+
+}
+
+.textfield1:focus~.form-label,
+.textfield1:not(:placeholder-shown).textfield1:not(:focus)~.form-label {
+	position: absolute;
+	top: -1rem;
+	font-size: 1.5rem;
+	background-color: white;
+	padding: 0 0.4rem;
+}
+
+textarea {
+	resize: none;
+}
+
+#Message {
+	padding-left: 2rem;
+	width: 34rem;
+
+
+
+}
+
+.button-11 {
+	width: 22rem !important;
+}
+
+.button-1:hover {
+	background-color: rgb(144, 221, 144) !important;
+	color: black;
+}
+
+.information {
+	height: 10rem;
+	width: 100%;
+	position: relative;
+	top: -1rem;
+}
+
+.address {
+	display: flex;
+	/* justify-content: center; */
+	gap: 2rem;
+	position: relative;
+	left: 1.5rem;
+	line-height: 5rem;
+}
+
+.icon1 {
+	font-size: 2rem;
+	position: relative;
+	top: 0rem;
+	left: 1rem;
+}
+
+.location {
+	font-size: 2rem;
+	position: relative;
+}
+
+.social_icon  {
+height: 6rem;
+width: 100%;
+display: flex;
+gap:2.5rem;
+margin-top: 1.5rem;
+margin-left: 2rem;
+}
+
+.socialmedia {
+	font-size: 3rem;
+}
+.social_icon a{
+	color: black;
+}

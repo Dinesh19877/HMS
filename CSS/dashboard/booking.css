@@ -1,0 +1,98 @@
+
+.booking_form{
+    height: 86vh;
+    width: 75%;
+    position: relative;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.booking_form_heading{
+    font-size: 3.8rem;
+    height:5rem;
+    color:  rgba(0, 128, 0, 0.596) ;
+    text-align: center;
+    padding-top: 2rem;
+}
+.sub_heading{
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+.input_box{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2.5rem;
+   margin-left: 4rem  ;
+}
+
+label{
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+ 
+input[type="text"]{
+    width: 25rem;
+    outline: none;
+    padding: 2px 15px ;
+    height: 30px;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #333;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.error{
+    margin-top: 5px;
+
+}
+
+.gender_option{
+    display: flex;
+width: 28rem;
+
+
+}
+.gender_opt{
+    display: flex;
+    gap: 1rem;
+}
+.female{
+    margin:  0 3rem ;
+
+}
+input[type=radio] {
+    accent-color:rgba(0, 128, 0, 0.847);
+  }
+
+.input_box .third_line{
+position: absolute !important;
+left: 3rem !important;}
+
+.department{
+    width: 27rem;
+    outline: none;
+    padding: 2px 15px ;
+    height: 35px;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #333;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.Booking_btn{
+    padding: 1rem;
+    height: 4rem;
+    width: 14rem;
+    position: absolute;
+right: 8rem;
+bottom: 5rem;
+outline: none;
+border: none;
+background-color: rgba(0, 128, 0, 0.596);
+color: white;
+border-radius: 1rem;
+font-size: 1.5rem;
+}
+

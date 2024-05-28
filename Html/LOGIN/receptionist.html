@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../../CSS/REgister/registration.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <style>
+       
+    .forget{
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    .form{
+        width: 47rem;
+    }
+    .textfield{
+  width: 30rem !important;
+ 
+
+}
+.button-11{
+	width: 15rem !important;
+    font-size: 2rem;
+}
+.button-1:hover{
+	background-color: rgb(144, 221, 144) !important;
+	color: black;
+	}
+    .account11{
+        position: relative;
+        left: 3rem;
+    }
+    .pass{
+  width: 26rem !important;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!--========bcg image for form ===========  -->
+  <div class="container"></div>
+
+  <!-- ======form ======= -->
+  <form action="../../php/Register/registration.php" method="post" name="FORM" onsubmit="return validform()" id="form" class="form" autocomplete="on">
+    <h1 class="head">Login form</h1>
+
+    <!-- ===========================email============================== -->
+    <div class="form_con">
+      <input type="email" name="email" id="email" class="textfield"  placeholder=" " />
+      <label class="form-label">Enter your E-mail</label>
+      <i class="fa-solid fa-envelope icon"></i>
+      <p class="error" id="email_error"></p>
+
+ </div>
+    <!-- ===========================password============================== -->
+    <div class="form_con">
+      <input type="password" name="password" id="password" class="textfield pass"  placeholder=" " />
+      <label class="form-label">Enter Password</label>
+      <i class="fa-solid fa-lock icon"></i>
+      <i class="bi bi-eye-slash passshow" id="togglePassword"></i>
+      <p class="error" id="password_error"></p>
+    </div>
+
+ 
+
+    <div class="form_con btn" >
+      <input type="submit" name="sumb" id="submit" class="button-1 button-11" value="Login" placeholder="" />
+    </div>
+
+   
+  </form>
+</body>
+<script src="../../Js/register/registration.js"></script>
+</html>

@@ -1,0 +1,12 @@
+container
+form-con
+textbox
+form-label
+form-error
+.textbox:focus ~ .form-label,.textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label
+<i class="fa-solid fa-user"></i> user
+<i class="fa-solid fa-lock"></i> pass
+<i class="fa-solid fa-envelope"></i> email
+<i class="fa-solid fa-eye-slash"></i> show
+already have an account?login
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css

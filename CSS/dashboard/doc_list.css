@@ -1,0 +1,58 @@
+
+/* ============working space============ */
+.box{
+    height: 80vh;
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit , minmax(20rem,1fr));
+    gap: 5rem;
+}
+.sub_box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+background-color: white;
+margin-bottom: 1rem;
+}
+.title{
+    font-size: 1.8rem;
+    color: rgba(0, 128, 0, 0.596) ;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1rem;
+}
+.title_img{  
+    width: 100%;
+
+}
+
+
+
+.image{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+overflow: hidden;
+margin: 20px auto;
+}
+
+
+.seemorebtn .btn{
+    text-align: center;
+    margin-top: -20px;
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 17px 60px;
+    background: transparent;
+    width: 119px;
+    outline: none;
+border: none;
+background-color: rgba(0, 128, 0, 0.596);
+color: white;
+border-radius: 5px;
+}
+  
