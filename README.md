@@ -9,6 +9,22 @@ Any Editor (VS Code or Sublime Text)
 
 Any web browser with latest version
 
+# Our Features 
+Login/Logout 
+
+Appointment Booking
+
+Check History
+
+Prescription PDF Download
+
+Add/Edit/Remove/View Doctor
+
+Add/Edit/Remove/View Receptionist
+
+Confirm Booking
+
+Thorough JavaScript Validation
 
 # Languages and Technologies used
 
